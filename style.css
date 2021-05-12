@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.moves {
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	position: relative;
+}
+.moves > span {
+	height: 80%;
+	position: absolute;
+	width: 80%;
+	padding: 32px;
+	border-radius: 50%;
+	background: white;
+	box-shadow: inset 0px 8px 0px 0px #000000;
+}
+.scissors {
+	background: radial-gradient(hsl(39, 89%, 49%) to hsl(40, 84%, 53%));
+}

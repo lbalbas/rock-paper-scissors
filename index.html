@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+		<title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="score-container">
+			<h1 class="title">Rock Paper Scissors</h1>
+			<div class="score">
+				<span>Score</span>
+				<span class="score-count">0</span>
+			</div>
+		</div>
+		<div class="game-choose">
+			<div href="#pick-paper" role="button" class="moves">
+				<span>
+					<img src="images/icon-paper.svg" alt="Paper" />
+				</span>
+			</div>
+			<div href="#pick-scissors" role="button" class="moves scissors">
+				<span>
+					<img src="images/icon-scissors.svg" alt="Pick Scissors" />
+				</span>
+			</div>
+			<div href="#pick-rock" role="button" class="moves">
+				<span>
+					<img src="images/icon-Rock.svg" alt="Pick Rock" />
+				</span>
+			</div>
+		</div>
+		<div class="game-result">
+			<div class="pick player-pick">
+				<span>You Picked</span>
+				<div class="moves"></div>
+			</div>
+			<div class="result-col">
+				<span class="result"></span>
+				<button class="button play-again"></button>
+			</div>
+			<div class="pick house-pick">
+				<span>The House Picked</span>
+				<div class="moves"></div>
+			</div>
+		</div>
+		<button class="button reverse">Rules</button>
+		<button class="button reverse bonus">Bonus Mode</button>
+
+		<div class="rules-modal">
+			<h2>Rules</h2>
+			<img
+				src="./images/image-rules.svg"
+				alt="Rules, Rock>Scissors>Paper>Rock"
+			/>
+		</div>
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</body>
+</html>
