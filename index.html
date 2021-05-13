@@ -12,7 +12,7 @@
 			href="./images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="style.css" />
-		<script src="script.js"></script>
+
 		<title>Frontend Mentor | Rock, Paper, Scissors</title>
 
 		<style>
@@ -30,21 +30,31 @@
 			<h1 class="title">Rock Paper Scissors</h1>
 			<div class="score">
 				<span>Score</span>
-				<span class="score-count">0</span>
+				<span id="score-count">0</span>
 			</div>
 		</div>
 		<div class="game-choose">
-			<div href="#pick-paper" role="button" class="moves">
+			<div
+				id="paper"
+				href="#pick-paper"
+				role="button"
+				class="moves paper"
+			>
 				<span>
 					<img src="images/icon-paper.svg" alt="Paper" />
 				</span>
 			</div>
-			<div href="#pick-scissors" role="button" class="moves scissors">
+			<div
+				id="scissors"
+				href="#pick-scissors"
+				role="button"
+				class="moves scissors"
+			>
 				<span>
 					<img src="images/icon-scissors.svg" alt="Pick Scissors" />
 				</span>
 			</div>
-			<div href="#pick-rock" role="button" class="moves">
+			<div id="rock" href="#pick-rock" role="button" class="moves rock">
 				<span>
 					<img src="images/icon-Rock.svg" alt="Pick Rock" />
 				</span>
@@ -56,7 +66,7 @@
 				<div class="moves"></div>
 			</div>
 			<div class="result-col">
-				<span class="result"></span>
+				<span id="result"></span>
 				<button class="button play-again"></button>
 			</div>
 			<div class="pick house-pick">
@@ -66,13 +76,15 @@
 		</div>
 		<button class="button reverse">Rules</button>
 		<button class="button reverse bonus">Bonus Mode</button>
-
-		<div class="rules-modal">
-			<h2>Rules</h2>
-			<img
-				src="./images/image-rules.svg"
-				alt="Rules, Rock>Scissors>Paper>Rock"
-			/>
+		<div class="rules-container">
+			<div class="rules-modal">
+				<h2>Rules</h2>
+				<img
+					src="./images/image-rules.svg"
+					alt="Rules, Rock>Scissors>Paper>Rock"
+				/>
+				<a href="#close" role="button" class="rules-close"></a>
+			</div>
 		</div>
 		<div class="attribution">
 			Challenge by
@@ -82,5 +94,6 @@
 				>Frontend Mentor</a
 			>. Coded by <a href="#">Your Name Here</a>.
 		</div>
+		<script src="script.js"></script>
 	</body>
 </html>

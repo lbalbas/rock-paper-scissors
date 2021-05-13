@@ -4,21 +4,38 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+	color: white;
+}
 .moves {
 	border-radius: 50%;
 	height: 150px;
 	width: 150px;
+	display: grid;
+	place-items: center;
 	position: relative;
+	cursor: pointer;
 }
 .moves > span {
 	height: 80%;
 	position: absolute;
 	width: 80%;
-	padding: 32px;
+	display: grid;
+	place-items: center;
 	border-radius: 50%;
 	background: white;
-	box-shadow: inset 0px 8px 0px 0px #000000;
+	box-shadow: inset 0px 7px 0px 0px hsl(235, 22%, 78%);
 }
 .scissors {
-	background: radial-gradient(hsl(39, 89%, 49%) to hsl(40, 84%, 53%));
+	background-image: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+	box-shadow: inset 0px -7px 0px 0px hsl(28, 76%, 44%);
+}
+.paper {
+	background-image: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+	box-shadow: inset 0px -7px 0px 0px hsl(229, 65%, 46%);
+}
+.rock {
+	background-image: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+	box-shadow: inset 0px -7px 0px 0px hsl(348, 77%, 35%);
 }
