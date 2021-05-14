@@ -11,6 +11,11 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 
 		<title>Frontend Mentor | Rock, Paper, Scissors</title>
@@ -27,7 +32,7 @@
 	</head>
 	<body>
 		<div class="score-container">
-			<h1 class="title">Rock Paper Scissors</h1>
+			<h1 class="title">Rock <br />Paper <br />Scissors</h1>
 			<div class="score">
 				<span>Score</span>
 				<span id="score-count">0</span>
@@ -74,26 +79,29 @@
 				<div class="moves"></div>
 			</div>
 		</div>
-		<button class="button reverse">Rules</button>
-		<button class="button reverse bonus">Bonus Mode</button>
-		<div class="rules-container">
-			<div class="rules-modal">
-				<h2>Rules</h2>
-				<img
-					src="./images/image-rules.svg"
-					alt="Rules, Rock>Scissors>Paper>Rock"
-				/>
-				<a href="#close" role="button" class="rules-close"></a>
+		<footer>
+			<button class="rules">Rules</button>
+
+			<div class="rules-container">
+				<div class="rules-modal">
+					<h2>Rules</h2>
+					<img
+						src="./images/image-rules.svg"
+						alt="Rules, Rock>Scissors>Paper>Rock"
+					/>
+					<a href="#close" role="button" class="rules-close"></a>
+				</div>
 			</div>
-		</div>
-		<div class="attribution">
-			Challenge by
-			<a
-				href="https://www.frontendmentor.io?ref=challenge"
-				target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div>
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Your Name Here</a>.
+			</div>
+		</footer>
+
 		<script src="script.js"></script>
 	</body>
 </html>
