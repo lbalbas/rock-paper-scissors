@@ -38,7 +38,7 @@
 				<span id="score-count">0</span>
 			</div>
 		</div>
-		<div class="game-choose">
+		<div id="movesCont" class="game-choose">
 			<div
 				id="paper"
 				href="#pick-paper"
@@ -61,28 +61,31 @@
 			</div>
 			<div id="rock" href="#pick-rock" role="button" class="moves rock">
 				<span>
-					<img src="images/icon-Rock.svg" alt="Pick Rock" />
+					<img src="images/icon-rock.svg" alt="Pick Rock" />
 				</span>
 			</div>
 		</div>
-		<div class="game-result">
+
+		<div id="pickedContainer" class="game-result hidden">
 			<div class="pick player-pick">
 				<span>You Picked</span>
-				<div class="moves"></div>
+				<div id="playerMove" class="moves"></div>
 			</div>
-			<div class="result-col">
+
+			<div id="resultContainer" class="result-col hidden">
 				<span id="result"></span>
-				<button class="button play-again"></button>
+				<button onclick="newGame()" class="button play-again"></button>
 			</div>
+
 			<div class="pick house-pick">
 				<span>The House Picked</span>
-				<div class="moves"></div>
+				<div id="houseMove" class="moves"></div>
 			</div>
 		</div>
+
 		<footer>
 			<button class="rules">Rules</button>
-
-			<div class="rules-container">
+			<div class="rules-container hidden">
 				<div class="rules-modal">
 					<h2>Rules</h2>
 					<img

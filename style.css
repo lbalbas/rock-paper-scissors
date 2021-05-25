@@ -106,10 +106,11 @@ body {
 }
 
 .rules-container {
-	display: none;
 }
 .game-result {
-	display: none;
+}
+.result-col {
+	transition: all 5s ease-in;
 }
 .rules {
 	border-radius: 7px;
@@ -127,4 +128,7 @@ footer {
 }
 .attribution {
 	justify-self: center;
+}
+.hidden {
+	display: none;
 }

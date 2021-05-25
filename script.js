@@ -15,6 +15,12 @@ const resultList = {
 
 var userScore = 0;
 
+var pickedContainer = document.getElementById("pickedContainer");
+var movesChooseCont = document.getElementById("movesCont");
+var resultContainer = document.getElementById("resultContainer");
+var playerMove;
+var houseMove;
+
 document.getElementById("scissors").addEventListener("click", startGame);
 document.getElementById("paper").addEventListener("click", startGame);
 document.getElementById("rock").addEventListener("click", startGame);
@@ -60,9 +66,33 @@ function finishGame(result) {
 			displayResult("YOU LOSE");
 			break;
 	}
-	console.log(scoreDisplay);
+	updateScore();
 }
+
 function displayResult(text) {
-	document.getElementById("score-count").innerHTML = userScore;
+	hide(movesChooseCont);
+	unhide(pickedContainer);
 	document.getElementById("result").innerHTML = text;
+
+	showPicks();
+	delay(() => unhide(resultContainer), 5000);
 }
+
+function updateScore() {
+	document.getElementById("score-count").innerHTML = userScore;
+}
+
+function hide(element) {
+	element.classList.add("hidden");
+}
+
+function unhide(element) {
+	element.classList.remove("hidden");
+}
+function delay(fnc, time) {
+	setTimeout(() => {
+		fnc();
+		console.log("Hi");
+	}, time);
+}
+function showPicks() {}
