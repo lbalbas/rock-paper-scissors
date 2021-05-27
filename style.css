@@ -21,12 +21,12 @@ body {
 	justify-content: space-between;
 	border-radius: 10px;
 	border: 2px hsl(217, 16%, 45%) solid;
-	margin: 2rem auto;
+	margin: 2rem auto 0 auto;
 	width: 75%;
 	padding: 1rem 2rem 1rem 2rem;
 	min-width: 300px;
 	text-transform: uppercase;
-	max-width: 800px;
+	max-width: 600px;
 }
 .title {
 	font-size: 2.5rem;
@@ -84,33 +84,66 @@ body {
 	background-size: 225px;
 	background-position: center 70px;
 }
-
-.paper {
+.game-choose > .paper {
 	transform: translateX(125%);
-	background-image: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
-	box-shadow: inset 0px -5px 0px 0px hsl(229, 65%, 46%);
 	grid-column: 2;
 }
-.scissors {
+.paper {
+	background-image: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+	box-shadow: inset 0px -5px 0px 0px hsl(229, 65%, 46%);
+}
+
+.game-choose > .scissors {
 	transform: translateX(-125%);
-	background-image: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
-	box-shadow: inset 0px -5px 0px 0px hsl(28, 76%, 44%);
 	grid-column: 4;
 }
-.rock {
+.scissors {
+	background-image: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+	box-shadow: inset 0px -5px 0px 0px hsl(28, 76%, 44%);
+}
+
+.game-choose > .rock {
 	transform: translateY(10%);
-	background-image: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
-	box-shadow: inset 0px -5px 0px 0px hsl(348, 77%, 35%);
 	grid-column: 3;
 	grid-row: 2;
+}
+.rock {
+	background-image: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+	box-shadow: inset 0px -5px 0px 0px hsl(348, 77%, 35%);
+}
+.pick {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 100%;
+}
+.picked {
+	transform: scale(1.5);
 }
 
 .rules-container {
 }
+
 .game-result {
+	margin: 0 auto;
+	text-align: center;
+	height: 350px;
+	place-items: center;
+	min-width: 300px;
+	text-transform: uppercase;
+	max-width: 750px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 .result-col {
-	transition: all 5s ease-in;
+	display: flex;
+	height: 25%;
+	flex-direction: column;
+	margin-top: 4rem;
+	align-items: center;
+	justify-content: space-around;
 }
 .rules {
 	border-radius: 7px;
@@ -123,6 +156,11 @@ body {
 	justify-self: right;
 	margin-right: 2rem;
 }
+.play-again {
+	width: 175px;
+	height: 40px;
+}
+
 footer {
 	display: grid;
 }

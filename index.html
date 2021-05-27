@@ -69,17 +69,19 @@
 		<div id="pickedContainer" class="game-result hidden">
 			<div class="pick player-pick">
 				<span>You Picked</span>
-				<div id="playerMove" class="moves"></div>
+				<div role="button" id="playerMove" class="picked moves"></div>
 			</div>
 
 			<div id="resultContainer" class="result-col hidden">
 				<span id="result"></span>
-				<button onclick="newGame()" class="button play-again"></button>
+				<button onclick="newGame()" class="button play-again">
+					Play Again
+				</button>
 			</div>
 
 			<div class="pick house-pick">
 				<span>The House Picked</span>
-				<div id="houseMove" class="moves"></div>
+				<div role="button" id="houseMove" class="picked moves"></div>
 			</div>
 		</div>
 
